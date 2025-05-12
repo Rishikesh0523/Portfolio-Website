@@ -1,57 +1,61 @@
-/*==================== HEADER SCROLL EFFECT ====================*/
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('.header');
-    
-    // Add sticky class when scrolled
-    header.classList.toggle('sticky', window.scrollY > 10);
-});
+// Toggle Icon Navbar
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-/*==================== ACTIVE LINK & NAVIGATION ====================*/
-document.addEventListener('DOMContentLoaded', function() {
-    // This will be handled by the module-loader.js
-    
-    /*==================== SCROLL REVEAL ====================*/
-    ScrollReveal({
-        distance: '80px',
-        duration: 2000,
-        delay: 200
-    });
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x')
+    navbar.classList.toggle('active')
+}
 
-    ScrollReveal().reveal('.heading', { origin: 'top' });
-    ScrollReveal().reveal('.home-img, .skills-container, .projects-container, .blog-container, .contact form', { origin: 'bottom' });
-    ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-    ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
-    ScrollReveal().reveal('.skill-item, .project-box, .blog-post', { origin: 'bottom', interval: 200 });
 
-    /*==================== FORM VALIDATION ====================*/
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            // The form submission is handled by the form-specific script in index.html
-        });
-    }
+// Scroll Section Active link 
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
-    /*==================== SCROLL TO TOP BUTTON ====================*/
-    window.addEventListener('scroll', function() {
-        const scrollTopBtn = document.querySelector('.footer-iconTop a');
-        if (scrollTopBtn) {
-            if (window.scrollY > 500) {
-                scrollTopBtn.style.display = 'flex';
-            } else {
-                scrollTopBtn.style.display = 'none';
-            }
-        }
-    });
-    
-    // Add click event to scroll top button
-    const scrollTopBtn = document.querySelector('.footer-iconTop a');
-    if (scrollTopBtn) {
-        scrollTopBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
-        });
-    }
+        };
+    });
+    // Sticky Navbar
+    let header = document.querySelector('header');
+
+    header.classList.toggle('sticky', window.screenY > 100);
+
+    // remove toggle icon and navbar when clicked on navbar link (scroll)
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active')
+};
+
+
+// Scroll Reveal 
+ScrollReveal({
+    // reset: true,
+    distance: '80px',
+    duration: 1500,
+    delay: 100
 });
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+
+// Typed JS
+const typed = new Typed('.multiple-text', {
+    strings: ['Frontend Developer!', 'Pianist!', 'Photographer!', 'YouTuber!', 'TikToker!', 'Computer Engineer!'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+})
