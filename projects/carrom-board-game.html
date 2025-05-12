@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrom Board Game Project | Rishikesh Paudel</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Detailed information about the Carrom Board Game project developed by Rishikesh Paudel">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-detail.css">
+</head>
+<body>
+    <!-- Header will be loaded here via JS -->
+    <div id="header-container"></div>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail">
+        <div class="project-header">
+            <h2 class="heading">Carrom Board <span>Game</span></h2>
+            <div class="project-links">
+                <a href="https://github.com/Rishikesh0523/carrom-board-game" target="_blank" class="btn">
+                    <i class='bx bxl-github'></i> View on GitHub
+                </a>
+                <a href="#demo" class="btn">
+                    <i class='bx bx-play'></i> Watch Demo
+                </a>
+            </div>
+        </div>
+
+        <div class="project-gallery">
+            <div class="main-image">
+                <img src="https://images.unsplash.com/photo-1620741211956-32977c8973be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Carrom Board Game">
+            </div>
+            <div class="gallery-thumbs">
+                <img src="/projects/images/carrom-1.jpg" alt="Carrom Game Screenshot 1" class="thumb">
+                <img src="/projects/images/carrom-2.jpg" alt="Carrom Game Screenshot 2" class="thumb">
+                <img src="/projects/images/carrom-3.jpg" alt="Carrom Game Screenshot 3" class="thumb">
+                <img src="/projects/images/carrom-4.jpg" alt="Carrom Game Screenshot 4" class="thumb">
+            </div>
+        </div>
+
+        <div class="project-info">
+            <div class="info-column">
+                <h3>Project Overview</h3>
+                <p>The Carrom Board Game is a digital adaptation of the popular tabletop game, implemented using C++ and the SDL library. It provides a realistic physics-based simulation of the classic game, allowing players to enjoy Carrom on their computers with intuitive controls and engaging gameplay.</p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Realistic physics simulation using Box2D physics engine</li>
+                    <li>Multiple game modes: Player vs Player, Player vs AI</li>
+                    <li>Customizable striker force and angle</li>
+                    <li>Realistic collision detection and response</li>
+                    <li>Scoring system that follows official Carrom rules</li>
+                    <li>Sound effects and background music</li>
+                    <li>Save and resume game functionality</li>
+                </ul>
+                
+                <h3>Technical Challenges</h3>
+                <p>One of the main challenges in developing this game was implementing accurate physics for the pieces. The movement of the striker and the resulting collisions needed to feel realistic while remaining performant. This required fine-tuning of the physics parameters and extensive testing.</p>
+                
+                <p>Another significant challenge was creating an AI opponent that could make strategic shots. The AI algorithm analyzes the board state, calculates possible trajectories, and selects the most promising shot based on a scoring system that evaluates potential outcomes.</p>
+            </div>
+            
+            <div class="info-column">
+                <h3>Technologies Used</h3>
+                <div class="tech-list">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">SDL2</span>
+                    <span class="tech-tag">Box2D Physics</span>
+                    <span class="tech-tag">OpenGL</span>
+                    <span class="tech-tag">CMake</span>
+                </div>
+                
+                <h3>Development Process</h3>
+                <p>This project was developed over a period of 3 months, starting with basic rendering and gradually adding physics, game logic, AI, and polish. The development followed these main phases:</p>
+                
+                <ol>
+                    <li>Research and planning phase</li>
+                    <li>Setting up the project structure and rendering engine</li>
+                    <li>Implementing core physics for pieces and striker</li>
+                    <li>Building game logic and rules</li>
+                    <li>Creating AI opponent</li>
+                    <li>Adding UI, sound effects, and visual polish</li>
+                    <li>Testing and optimization</li>
+                </ol>
+                
+                <h3>What I Learned</h3>
+                <p>This project significantly enhanced my understanding of game physics, collision detection, and AI development. I learned to balance realistic physics with enjoyable gameplay, and gained experience in performance optimization for real-time applications.</p>
+                
+                <p>The AI implementation taught me about decision trees and evaluation functions, while the project as a whole improved my C++ skills and understanding of game development patterns.</p>
+            </div>
+        </div>
+        
+        <div id="demo" class="demo-section">
+            <h3>Demo Video</h3>
+            <div class="video-container">
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/VIDEO_ID" title="Carrom Board Game Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div class="project-navigation">
+            <a href="/projects/stock-tracker.html" class="nav-link prev-project">
+                <i class='bx bx-chevron-left'></i> Previous Project
+            </a>
+            <a href="/projects/index.html" class="nav-link all-projects">
+                <i class='bx bx-grid-alt'></i> All Projects
+            </a>
+            <a href="/projects/data-viz-dashboard.html" class="nav-link next-project">
+                Next Project <i class='bx bx-chevron-right'></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here via JS -->
+    <div id="footer-container"></div>
+    
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Include Module JS -->
+    <script src="/js/module-loader.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="/js/script.js"></script>
+    <script src="/js/project-detail.js"></script>
+</body>
+</html>

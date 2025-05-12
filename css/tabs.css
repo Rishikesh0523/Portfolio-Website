@@ -1,0 +1,337 @@
+/* Tab Navigation System Styles */
+
+/* Common tabs container */
+.tabs-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tabs navigation */
+.tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba(0, 171, 240, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0 0.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 0;
+    height: 0.3rem;
+    background-color: var(--main-color);
+    transition: width 0.3s ease;
+}
+
+.tab-btn:hover {
+    color: var(--main-color);
+}
+
+.tab-btn.active {
+    color: var(--main-color);
+}
+
+.tab-btn.active::after {
+    width: 100%;
+}
+
+/* Tab content */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+    width: 100%;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section with tabs styling */
+.section-with-tabs {
+    padding-bottom: 5rem;
+}
+
+/* Skills specific tab styling */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 2.5rem;
+}
+
+.skills-grid-technical {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 2.5rem;
+}
+
+.skill-icon {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+    transform: translateY(-5px);
+}
+
+/* Timeline styling for Experience and Education tabs */
+.timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--main-color);
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 120px;
+    margin-bottom: 5rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    left: 50px;
+    top: 10px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-date {
+    position: absolute;
+    width: 100px;
+    left: 0;
+    top: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.timeline-content {
+    background-color: var(--second-bg-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem var(--light-shadow);
+}
+
+.timeline-content h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--main-color);
+}
+
+.timeline-content h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.timeline-content p {
+    font-size: 1.5rem;
+}
+
+/* Interests tab styling */
+.interests-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 2.5rem;
+}
+
+.interest-item {
+    background-color: var(--second-bg-color);
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0.5rem 1rem var(--light-shadow);
+}
+
+.interest-item:hover {
+    transform: translateY(-1rem);
+}
+
+.interest-icon {
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.interest-item h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.interest-item p {
+    font-size: 1.5rem;
+}
+
+/* Contact page tab styling */
+.contact-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.map-container {
+    grid-column: span 2;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem var(--light-shadow);
+}
+
+/* FAQ styling */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: var(--second-bg-color);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.5rem 1rem var(--light-shadow);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.faq-question i {
+    font-size: 2rem;
+    color: var(--main-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+}
+
+.faq-answer p {
+    padding: 0 2rem 2rem;
+    font-size: 1.5rem;
+}
+
+/* Media Queries for Tabs */
+@media (max-width: 991px) {
+    .contact-info-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-container {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+    }
+    
+    .tab-btn {
+        white-space: nowrap;
+    }
+    
+    .skills-grid,
+    .interests-container {
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    }
+    
+    .timeline-container::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 60px;
+    }
+    
+    .timeline-dot {
+        left: 20px;
+    }
+    
+    .timeline-date {
+        position: relative;
+        left: -40px;
+        top: -10px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .skills-grid,
+    .interests-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .tab-btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.4rem;
+    }
+}

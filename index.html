@@ -5,214 +5,621 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishikesh Paudel | Portfolio</title>
+    <title>Rishikesh Paudel | Computer Engineer & Developer</title>
 
-    <!-- box icons -->
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="Rishikesh Paudel - Computer Engineer, Frontend Developer, and Technology Enthusiast">
+    <meta name="keywords" content="computer engineer, web developer, frontend, portfolio, technology">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- custom css -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabs.css">
 </head>
 
 <body>
+    <!-- Header will be loaded here via JS -->
+    <div id="header-container"></div>
 
-    <!-- Header Design -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-
-        <i class="bx bx-menu" id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Home Section Design -->
+    <!-- Home Section -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Rishikesh Paudel</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>I am a frontend developer, pianist, photographer, and computer engineer. With a strong eye for detail and a passion for creativity, I create visually appealing websites while expressing myself through the beautiful melodies of the piano and capturing captivating moments behind the lens. Let's collaborate for an exceptional digital experience.</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/rishikesh.paudel.7/" target="_blank" ><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/rishikesh.paudel/" target="_blank" ><i class='bx bxl-instagram' ></i></a>
-                <a href="https://www.youtube.com/channel/UCj_i_AoBZmYS2DTcZVV7FpA" target="_blank" ><i class='bx bxl-youtube' ></i></a>
-                <a href="https://www.tiktok.com/@rishikesh.paudel" target="_blank" ><i class='bx bxl-tiktok' ></i></a>
-                <a href="https://www.linkedin.com/in/rishikesh-paudel/" target="_blank" ><i class='bx bxl-linkedin' ></i></a>
+            <div class="text-animate">
+                <h3>Hello, I'm</h3>
+                <h1>Rishikesh Paudel</h1>
+                <h3>I'm a Computer Engineer</h3>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <p>I solve computer related problems.</p>
+
+            <div class="btn-box">
+                <a href="#" class="btn">Download CV</a>
+                <a href="#about" class="btn scroll-btn">Learn More</a>
+            </div>
+
+            <div class="social-media">
+                <a href="https://github.com/Rishikesh0523" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/rishikesh-paudel/" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/rishikesh.paudel.7/" target="_blank"><i
+                        class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/rishikesh.paudel/" target="_blank"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://www.youtube.com/channel/UCj_i_AoBZmYS2DTcZVV7FpA" target="_blank"><i
+                        class='bx bxl-youtube'></i></a>
+            </div>
         </div>
 
         <div class="home-img">
-            <img src="images/rishikesh-paudel-home-image.jpg" alt="Home Image">
+            <img src="images/rishikesh-paudel-home-image.jpg" alt="Rishikesh Paudel">
         </div>
     </section>
 
-    <!-- About Section Design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/rishikesh-paudel-about-image.jpg" alt="about-img">
-        </div>
+    <!-- About Section -->
+    <section class="about section-with-tabs" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
 
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Frontend Developer!</h3>
-            <p>As a frontend developer, I combine my technical skills with a strong eye for design to create visually appealing and user-friendly websites. I am experienced in HTML, CSS, JavaScript, and various frontend frameworks. I strive to deliver seamless and engaging user experiences.</p>
-            <h3>Pianist!</h3>
-            <p>Music is my true passion. I have been playing the piano for over a decade, and it is my creative outlet. From classical masterpieces to modern compositions, I enjoy expressing emotions and storytelling through the beautiful melodies and harmonies of the piano.</p>
-            <h3>Photographer!</h3>
-            <p>Capturing moments and telling stories through photography is another form of artistic expression for me. I love exploring different perspectives, whether it's capturing stunning landscapes or creating meaningful portraits. My goal is to evoke emotions and create visually impactful images.</p>
-            <h3>Computer Engineer!</h3>
-            <p>With a background in computer engineering, I have a strong foundation in programming, algorithms, and problem-solving. This technical expertise allows me to approach frontend development with a holistic perspective, ensuring efficient and optimized code.</p>
-            <a href="#" class="btn">Read More</a>
+        <!-- About Tabs -->
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="profile">Profile</button>
+                <button class="tab-btn" data-tab="experience">Experience</button>
+                <button class="tab-btn" data-tab="education">Education</button>
+                <button class="tab-btn" data-tab="interests">Interests</button>
+            </div>
+
+            <div class="tab-content active" id="profile">
+                <div class="about-container">
+                    <div class="about-img">
+                        <img src="images/rishikesh-paudel-about-image.jpg" alt="About Image">
+                    </div>
+
+                    <div class="about-content">
+                        <h3>Computer Engineer & Developer</h3>
+                        <p>I'm a dedicated computer engineer with a strong passion for frontend development and solving
+                            complex problems. With a solid foundation in programming concepts and engineering
+                            principles, I create efficient, scalable, and user-friendly applications.</p>
+
+                        <div class="about-info">
+                            <div class="info-box">
+                                <h5>Experience</h5>
+                                <p>3+ years in development</p>
+                            </div>
+                            <div class="info-box">
+                                <h5>Location</h5>
+                                <p>Nepal</p>
+                            </div>
+                            <div class="info-box">
+                                <h5>Freelance</h5>
+                                <p>Available</p>
+                            </div>
+                            <div class="info-box">
+                                <h5>Languages</h5>
+                                <p>English, Nepali</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="experience">
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Project Manager & Full Stack Developer</h3>
+                            <h4>LightHouse InfoTech</h4>
+                            <ul>
+                                <li>Managed a software development team of three people.</li>
+                                <li>>Developed and enhanced proprietary software solutions to streamline and automate title research and management processes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="education">
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Computer Engineering</h3>
+                            <h4>Tribhuvan University</h4>
+                            <p>Specialized in software engineering, with coursework in algorithms, data structures,
+                                database systems, and web development. Graduated with distinction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="interests">
+                <div class="interests-container">
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class='bx bx-music'></i>
+                        </div>
+                        <h3>Piano</h3>
+                        <p>I've been playing the piano for over a decade, performing both classical and contemporary
+                            pieces. Music helps me maintain creative balance with my technical work.</p>
+                    </div>
+
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class='bx bx-camera'></i>
+                        </div>
+                        <h3>Photography</h3>
+                        <p>As an amateur photographer, I enjoy capturing landscapes and street scenes. Photography
+                            trains my eye for detail and composition, which transfers to my design work.</p>
+                    </div>
+
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class='bx bx-book-open'></i>
+                        </div>
+                        <h3>Reading</h3>
+                        <p>I'm an avid reader of technical books, science fiction, and philosophy. Reading expands my
+                            perspective and inspires new approaches to problem-solving.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Services Section Design -->
-    <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
+    <!-- Skills Section -->
+    <section class="skills section-with-tabs" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
 
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt' ></i>
-                <h3>Web Development</h3>
-                <p>Unlock your online potential with our comprehensive web development services. We specialize in building responsive and user-friendly websites using the latest technologies such as HTML5, CSS3, JavaScript, and popular frameworks. From custom web applications to e-commerce solutions, we deliver robust and scalable websites tailored to your business needs. Let's create an impactful online presence together.</p>
-                <a href="#" class="btn">Read More</a>
+        <!-- Skills Tabs -->
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="technical">Technical</button>
+                <button class="tab-btn" data-tab="professional">Professional</button>
+                <button class="tab-btn" data-tab="tools">Tools & Software</button>
             </div>
 
-            <div class="services-box">
-                <i class='bx bx-palette' ></i>
-                <h3>Graphics Design</h3>
-                <p>We provide a range of professional graphic design services tailored to your needs. Our offerings include logo design, branding, print design, and digital graphics. With a keen eye for aesthetics and attention to detail, we create visually captivating designs that effectively communicate your brand's message. Elevate your visual identity with our expert graphic design services.</p>
-                <a href="#" class="btn">Read More</a>
+            <div class="tab-content active" id="technical">
+                <div class="skills-grid-technical">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-html5'></i>
+                        </div>
+                        <h3>HTML & CSS</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-javascript'></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-c-plus-plus'></i>
+                        </div>
+                        <h3>C/C++</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-react'></i>
+                        </div>
+                        <h3>React.js</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-python'></i>
+                        </div>
+                        <h3>Python</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bx-data'></i>
+                        </div>
+                        <h3>SQL</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-bitcoin'></i>
+                        </div>
+                        <h3>Solidity</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bx-move'></i>
+                        </div>
+                        <h3>Move</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bx-chip'></i>
+                        </div>
+                        <h3>VHDL</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bx-microchip'></i>
+                        </div>
+                        <h3>Verilog</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-php'></i>
+                        </div>
+                        <h3>PHP</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-java'></i>
+                        </div>
+                        <h3>Java</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-android'></i>
+                        </div>
+                        <h3>Kotlin</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-go-lang'></i>
+                        </div>
+                        <h3>Go</h3>
+                    </div>
+                </div>
             </div>
 
-            <div class="services-box">
-                <i class='bx bx-bar-chart-alt' ></i>
-                <h3>Digital Marketing</h3>
-                <p>Supercharge your digital presence with our results-driven digital marketing services. We offer comprehensive strategies including search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, and content marketing. Our team of experts crafts targeted campaigns to boost brand visibility, drive traffic, and generate leads. Maximize your online success with our tailored digital marketing solutions.</p>
-                <a href="#" class="btn">Read More</a>
+            <div class="tab-content" id="professional">
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bx-palette'></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Creating intuitive interfaces with focus on user experience and accessibility</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bx-bulb'></i>
+                        </div>
+                        <h3>Problem Solving</h3>
+                        <p>Analytical thinking and creative approach to technical challenges</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bx-trending-up'></i>
+                        </div>
+                        <h3>Project Management</h3>
+                        <p>Experience with Agile methodologies and project coordination</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bx-group'></i>
+                        </div>
+                        <h3>Team Collaboration</h3>
+                        <p>Effective communication and collaborative work in multidisciplinary teams</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tools">
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-git'></i>
+                        </div>
+                        <h3>Git & GitHub</h3>
+                        <p>Version control, collaboration, and CI/CD pipelines</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-visual-studio'></i>
+                        </div>
+                        <h3>VS Code</h3>
+                        <p>Advanced usage with customized workflows and extensions</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-figma'></i>
+                        </div>
+                        <h3>Figma</h3>
+                        <p>UI design, prototyping, and design system implementation</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-docker'></i>
+                        </div>
+                        <h3>Docker</h3>
+                        <p>Containerization and deployment automation</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section Design -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
+    <!-- Projects Section Preview -->
+    <section class="projects-preview" id="projects">
+        <h2 class="heading">Featured <span>Projects</span></h2>
 
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="https://images.unsplash.com/photo-1620741211956-32977c8973be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" height="300" alt="portfolio-box-1">
-                <div class="portfolio-layer">
+        <div class="projects-container">
+            <div class="project-box">
+                <img src="https://images.unsplash.com/photo-1620741211956-32977c8973be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
+                    alt="Carrom Board Game">
+                <div class="project-info">
                     <h4>Carrom Board Game</h4>
-                    <p>Using C++ and SDL library</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <p>A digital implementation of the classic Carrom board game using C++ and SDL library, featuring
+                        physics simulation, AI opponents, and multiplayer functionality.</p>
+                    <div class="tech-stack">
+                        <span>C++</span>
+                        <span>SDL</span>
+                        <span>Game Physics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rishikesh0523/carrom-board-game" target="_blank"><i
+                                class='bx bxl-github'></i> Code</a>
+                        <a href="projects/carrom-board-game.html" class="project-detail-link" data-exists="true"><i
+                                class='bx bx-link-external'></i> Details</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="portfolio-box">
-                <img src="https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80" height="300" alt="portfolio-box-2">
-                <div class="portfolio-layer">
-                    <h4>Stock Tracker</h4>
-                    <p>Using C and curl library</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+            <div class="project-box">
+                <img src="https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80"
+                    alt="Stock Tracker">
+                <div class="project-info">
+                    <h4>Real-time Stock Tracker</h4>
+                    <p>A command-line application that tracks stock prices in real-time using C and the curl library.
+                        Features include price alerts, historical data analysis, and custom watchlists.</p>
+                    <div class="tech-stack">
+                        <span>C</span>
+                        <span>curl</span>
+                        <span>API Integration</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rishikesh0523/stock-tracker" target="_blank"><i
+                                class='bx bxl-github'></i> Code</a>
+                        <a href="projects/stock-tracker.html" class="project-detail-link" data-exists="true"><i
+                                class='bx bx-link-external'></i> Details</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="portfolio-box">
-                <img src="https://images.unsplash.com/photo-1455894127589-22f75500213a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1087&q=80" height="300" alt="portfolio-box-3">
-                <div class="portfolio-layer">
-                    <h4>Portfolio Website</h4>
-                    <p>Using HTML, CSS and JavaScript</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height="300" alt="portfolio-box-4">
-                <div class="portfolio-layer">
-                    <h4>YouTube</h4>
-                    <p>Follow me on YouTube! 😉</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height="300" alt="portfolio-box-5">
-                <div class="portfolio-layer">
-                    <h4>TikTok</h4>
-                    <p>Follow me on Tiktok! 😉</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height="300" alt="portfolio-box-6">
-                <div class="portfolio-layer">
-                    <h4>Instagram</h4>
-                    <p>Follow me on Instagram! 😉</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-    </section>
-
-    <!-- Contact Section Design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="#" method="POST" name="product" id="product">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name" name="Name" required>
-                <input type="email" placeholder="Email Address" name="Email" required>
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number" name="Mobile" required>
-                <input type="text" placeholder="Email Subject" name="Subject" required>
-            </div>
-            <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <button type="submit" value="Send Message" class="btn">
-                Send Message
-            </button>
-            <!-- <input type="submit" value="Send Message" class="btn"> -->
-        </form>
-    </section>
-
-    <!-- Footer Design -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by Rishikesh | All Rights Reserved.</p>
         </div>
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+        <div class="view-more">
+            <a href="projects/index.html" class="btn">View All Projects</a>
         </div>
-    </footer>
+    </section>
+
+    <!-- Blog Section Preview -->
+    <section class="blog-preview" id="blog">
+        <h2 class="heading">Latest <span>Blog Posts</span></h2>
+
+        <div class="blog-container">
+            <div class="blog-post">
+                <div class="blog-img">
+                    <img src="https://images.unsplash.com/photo-1544256718-3bcf237f3974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                        alt="Machine Learning Basics">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-info">
+                        <span class="date"><i class='bx bx-calendar'></i> May 05, 2023</span>
+                        <span class="category"><i class='bx bx-folder'></i> Machine Learning</span>
+                    </div>
+                    <h3>Getting Started with Machine Learning in Python</h3>
+                    <p>An introduction to fundamental machine learning concepts and how to implement your first ML model
+                        using Python libraries...</p>
+                    <a href="blog/machine-learning-basics.html" class="read-more blog-detail-link"
+                        data-exists="true">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <div class="blog-img">
+                    <img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="Web Development">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-info">
+                        <span class="date"><i class='bx bx-calendar'></i> April 18, 2023</span>
+                        <span class="category"><i class='bx bx-folder'></i> Web Development</span>
+                    </div>
+                    <h3>Modern CSS Techniques for Better Responsive Designs</h3>
+                    <p>Exploring advanced CSS concepts like Grid, Flexbox, and CSS variables to create more robust and
+                        flexible responsive layouts...</p>
+                    <a href="blog/modern-css-techniques.html" class="read-more blog-detail-link" data-exists="true">Read
+                        More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-more">
+            <a href="blog/index.html" class="btn">View All Posts</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-with-tabs" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <!-- Contact Tabs -->
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="contact-form">Get in Touch</button>
+                <button class="tab-btn" data-tab="contact-info">Contact Info</button>
+                <button class="tab-btn" data-tab="faq">FAQ</button>
+            </div>
+
+            <div class="tab-content active" id="contact-form">
+                <form action="#" method="POST" name="contact-form" id="contact-form">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name" name="Name" required>
+                        <input type="email" placeholder="Email Address" name="Email" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Subject" name="Subject" required>
+                        <input type="tel" placeholder="Phone (optional)" name="Phone">
+                    </div>
+                    <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="tab-content" id="contact-info">
+                <div class="contact-info-container">
+                    <div class="info-item">
+                        <i class='bx bx-map'></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@rishikeshpaudel.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class='bx bx-phone'></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+977 98XXXXXXXX</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class='bx bx-time-five'></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Sunday - Friday: 9AM - 6PM</p>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.31625860285!2d85.28493295541101!3d27.70895594761553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sus!4v1714308419468!5m2!1sen!2sus"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="faq">
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What services do you offer?</h3>
+                            <i class='bx bx-plus'></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>I specialize in frontend development, responsive web design, and web application
+                                development. My services include building custom websites, creating interactive user
+                                interfaces, implementing features in existing applications, and providing technical
+                                consultation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is your typical project timeline?</h3>
+                            <i class='bx bx-plus'></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Project timelines vary based on complexity and scope. A simple landing page might take
+                                1-2 weeks, while a full web application could take 2-3 months. I'll provide a detailed
+                                timeline during our initial consultation after understanding your specific requirements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do you handle project communication?</h3>
+                            <i class='bx bx-plus'></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>I maintain regular communication through email, video calls, and project management tools
+                                like Trello or Asana. I provide weekly progress updates and schedule check-in meetings
+                                to ensure the project stays aligned with your vision and requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer website maintenance services?</h3>
+                            <i class='bx bx-plus'></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, I offer website maintenance packages to keep your site secure, updated, and running
+                                smoothly. Services include regular updates, security monitoring, performance
+                                optimization, and content updates. We can discuss a maintenance plan tailored to your
+                                needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here via JS -->
+    <div id="footer-container"></div>
+
+    <!-- Form Handling -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyhxjlgkrFhkceKfRzMX3Ktbm-C2dykyM-uqOA9-w9DiDokv_yXPsP-97tGdbcb334n/exec'
+        const form = document.forms['contact-form']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    alert("Thank you! Your message has been received.")
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- Typed Js -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Include Module JS -->
+    <script src="/js/module-loader.js"></script>
 
-    <!-- custom js -->
-    <script src="js/script.js"></script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyhxjlgkrFhkceKfRzMX3Ktbm-C2dykyM-uqOA9-w9DiDokv_yXPsP-97tGdbcb334n/exec'
-        const form = document.forms['product']
-
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thank You! I Got Your Message Successfully." ))
-            .then(() => {  window.location.reload(); })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+    <!-- Custom JS -->
+    <script src="/js/script.js"></script>
+    <script src="/js/tabs.js"></script>
 
 </body>
+
+</html>
