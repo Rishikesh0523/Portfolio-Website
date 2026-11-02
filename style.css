@@ -1,0 +1,152 @@
+:root {
+  --ink: #1d2430;
+  --muted: #5d6878;
+  --line: #b3bac5;
+  --accent: #1f4e79;
+  --bar: #f6f7f9;
+  --nav-h: 58px;
+}
+
+* { box-sizing: border-box; }
+img, iframe { max-width: 100%; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font: 16.5px/1.65 "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------- Top navigation (static, so nothing moves while reading) ---------- */
+.topnav { position: sticky; top: 0; z-index: 10; background: var(--bar); border-bottom: 1px solid var(--line); }
+.tabs { max-width: 920px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 0 6px; }
+.tabs a { color: var(--muted); font-size: 15.5px; padding: 14px 14px 12px; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.tabs a:hover { color: var(--ink); text-decoration: none; }
+
+/* Active tab: the open section (or a page inside it), or About when nothing is open */
+body:not(:has(.tab:target, .tab :target)) .tabs a[data-tab="about"],
+body:has(#about:target) .tabs a[data-tab="about"],
+body:has(#research:target, #research :target) .tabs a[data-tab="research"],
+body:has(#publications:target) .tabs a[data-tab="publications"],
+body:has(#projects:target, #projects :target) .tabs a[data-tab="projects"],
+body:has(#experience:target) .tabs a[data-tab="experience"],
+body:has(#others:target) .tabs a[data-tab="others"] {
+  color: var(--accent); border-bottom-color: var(--accent); font-weight: 600;
+}
+
+/* ---------- Tabs and detail pages: one visible at a time, no JavaScript ---------- */
+.tab, .detail { display: none; }
+.tab:target, .tab:has(:target) { display: block; }
+body:not(:has(.tab:target, .tab :target)) #about { display: block; }
+.detail:target { display: block; }
+.tab:has(.detail:target) > h1, .tab:has(.detail:target) > .cards { display: none; }
+/* A large scroll margin keeps the page at the top when a tab opens, instead of jumping */
+.tab, .detail { scroll-margin-top: 100vh; }
+
+main { max-width: 1600px; margin: 0 auto; padding: 40px 24px 24px; overflow-wrap: break-word; }
+#research, #publications, #projects, #experience, #others { max-width: 880px; margin: 0 auto; }
+
+h1 { font-size: 30px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 20px; margin: 40px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+h3 { font-size: 16.5px; margin: 26px 0 4px; }
+.tab > h1 { margin-bottom: 20px; }
+p { margin: 8px 0; }
+.role { color: var(--muted); margin: 0 0 14px; }
+.meta { color: var(--muted); font-size: 14.5px; margin: 0 0 6px; }
+.small { font-size: 14.5px; }
+.muted { color: var(--muted); }
+.eyebrow { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--accent); font-weight: 600; margin: 0 0 2px; }
+ul { padding-left: 20px; margin: 8px 0; }
+li { margin: 4px 0; }
+
+/* ---------- About ---------- */
+.intro { display: grid; grid-template-columns: 260px minmax(0, 1fr) 360px; gap: 56px; align-items: start; }
+.facts { border-left: 1px solid var(--line); padding-left: 28px; font-size: 14.5px; }
+.side-edu { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; }
+.side-edu h3 { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 6px; }
+.side-edu p { margin: 4px 0; }
+.facts h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); border-bottom: 0; padding: 0; margin: 26px 0 6px; }
+.facts h2:first-child { margin-top: 0; }
+.facts ul { padding-left: 16px; }
+.facts p, .facts li { margin: 5px 0; }
+
+.main-col h2 { margin-top: 30px; }
+.side img { width: 260px; height: 260px; object-fit: cover; display: block; }
+.contact { list-style: none; padding: 0; margin: 14px 0 0; font-size: 14.5px; }
+.contact li { margin: 3px 0; }
+.side-links { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; }
+.side-links a { flex: 1 1 calc(50% - 4px); display: flex; align-items: center; gap: 7px; padding: 7px 10px; border: 1px solid var(--line); color: var(--ink); font-size: 14px; white-space: nowrap; }
+.side-links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.side-links svg { width: 16px; height: 16px; flex: none; fill: var(--accent); }
+.glance { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: 14px; }
+.glance dt { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 8px; }
+.glance dd { margin: 1px 0 0; }
+
+.question { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; font-size: 17.5px; font-weight: 600; }
+ul.interests li { margin: 5px 0; }
+
+
+/* ---------- Cards (square corners) ---------- */
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.card { display: flex; flex-direction: column; border: 1px solid var(--line); background: #fff; color: var(--ink); }
+.card:hover { border-color: var(--accent); text-decoration: none; }
+.card img, .card-figure { width: 100%; height: 210px; object-fit: contain; background: #fff; border-bottom: 1px solid var(--line); display: block; padding: 8px; }
+.card-figure { display: flex; align-items: center; justify-content: center; text-align: center; background: var(--bar); color: var(--muted); font-size: 14px; padding: 16px; }
+.card-body { display: block; padding: 14px 16px 16px; }
+.card-kicker { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); font-weight: 600; }
+.card-title { display: block; font-weight: 600; font-size: 16.5px; margin: 4px 0 6px; line-height: 1.4; }
+.card-text { display: block; font-size: 14.5px; color: var(--muted); }
+.back { font-size: 14.5px; margin: 0 0 18px; }
+
+/* ---------- Research and projects ---------- */
+.detail h2 { border-bottom: 0; margin: 0 0 4px; padding: 0; font-size: 24px; }
+.limits { font-size: 14.5px; color: var(--muted); }
+
+figure { margin: 14px 0; }
+figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: #fff; }
+figcaption, .caption { color: var(--muted); font-size: 14px; margin: 5px 0 0; }
+.pair, .videos { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 14px 0; align-items: start; }
+.pair figure, .videos figure { margin: 0; }
+
+.video { position: relative; aspect-ratio: 16 / 9; margin: 14px 0 4px; background: #111; }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.videos .video { margin-top: 0; }
+
+/* ---------- Publications ---------- */
+h3.sub { font-size: 13.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 26px 0 6px; }
+.pub { margin: 12px 0 18px; }
+.pub .title { font-weight: 600; }
+.pub a, .meta a, .back a, .contact a, p a, li a { text-decoration: underline; text-underline-offset: 2px; }
+.pub .authors { font-size: 15px; margin-top: 2px; }
+.pub .meta { margin: 2px 0 0; }
+.pub + .pub, .pub + h3.sub { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+
+/* ---------- Experience ---------- */
+.row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.row h3 { margin-bottom: 2px; }
+.row .when { color: var(--muted); font-size: 14.5px; white-space: nowrap; }
+.job + .job { margin-top: 24px; border-top: 1px solid var(--line); }
+
+footer { max-width: 880px; margin: 16px auto 0; padding: 20px 24px 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; text-align: center; }
+
+@media (max-width: 1100px) {
+  .intro { grid-template-columns: 220px minmax(0, 1fr); gap: 36px; }
+  .side img { width: 220px; height: 220px; }
+  .facts { grid-column: 1 / -1; border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 20px; }
+}
+
+@media (max-width: 720px) {
+  .intro { grid-template-columns: 1fr; gap: 20px; }
+  .pair, .videos, .cards { grid-template-columns: 1fr; }
+  .row { flex-direction: column; gap: 0; }
+  .tabs a { padding: 6px 8px 8px; font-size: 14.5px; }
+}
+
+@media print {
+  .topnav, .video, .cards, .back { display: none; }
+  .tab, .detail { display: block !important; }
+  a { color: inherit; }
+}

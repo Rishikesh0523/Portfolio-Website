@@ -1,218 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishikesh Paudel | Portfolio</title>
-
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rishikesh Paudel | Robotics and Autonomous Systems</title>
+<meta name="description" content="Rishikesh Paudel is a computer engineer interested in robot learning, perception and state estimation, and efficient computing for autonomous systems. Seeking PhD positions in robotics for Fall 2027.">
+<meta name="author" content="Rishikesh Paudel">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, noai, noimageai">
+<link rel="canonical" href="https://rishikeshpaudel.com.np/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Rishikesh Paudel">
+<meta property="og:description" content="Robot learning, perception and state estimation, and efficient computing for autonomous systems.">
+<meta property="og:url" content="https://rishikeshpaudel.com.np/">
+<meta property="og:image" content="https://rishikeshpaudel.com.np/assets/portrait.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231f4e79'/%3E%3Ctext x='32' y='42' font-family='Segoe UI,Arial,sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3ERP%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Header Design -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+<nav class="topnav" aria-label="Sections">
+  <div class="tabs">
+    <a href="#about" data-tab="about">About</a>
+    <a href="#research" data-tab="research">Research</a>
+    <a href="#publications" data-tab="publications">Publications</a>
+    <a href="#experience" data-tab="experience">Experience</a>
+    <a href="#projects" data-tab="projects">Projects</a>
+    <a href="#others" data-tab="others">Others</a>
+    <a href="assets/Rishikesh_Paudel_CV.pdf">CV</a>
+  </div>
+</nav>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
+<main>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="tab">
+  <div class="intro">
+    <aside class="side">
+      <img src="assets/portrait.jpg" alt="Rishikesh Paudel" width="200" height="200">
+      <p class="contact"><a href="mailto:rishikesh0523@gmail.com">rishikesh0523@gmail.com</a></p>
+      <div class="side-links">
+        <a href="assets/Rishikesh_Paudel_CV.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>CV (PDF)</a>
+        <a href="https://www.linkedin.com/in/rishikesh-paudel/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+        <a href="https://github.com/Rishikesh0523"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+        <a href="https://www.youtube.com/@eyesome-official"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>YouTube</a>
+      </div>
+      <div class="side-edu">
+      <h3>Education</h3>
+      <p><b>BE in Computer Engineering</b><br>IOE Pulchowk Campus, Tribhuvan University, 2022 to 2026</p>
+      <p>Distinction, 81% aggregate.<br>Thesis: particle track reconstruction using graph neural networks on FPGA.</p>
+      </div>
+    </aside>
+    <div class="main-col">
+      <h1>Rishikesh Paudel</h1>
+      <p class="role">AI and Robotics &middot; Autonomous Systems &middot; Kathmandu, Nepal</p>
+      <p>I work on AI for autonomous systems: robots that perceive, learn and make reliable decisions in conditions they were not trained for. My work so far spans robot learning, perception, and efficient AI on FPGAs and GPUs.</p>
+      <p>My bachelor's thesis, with researchers on the ATLAS experiment at CERN, put a graph neural network for particle tracking onto an FPGA (<a href="#r-atlas">details</a>). I now work as an AI/ML engineer at MedForce AI, and I am seeking PhD positions in robotics and autonomous systems for <b>Fall 2027</b>.</p>
 
-    <!-- Home Section Design -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Rishikesh Paudel</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>I am a frontend developer, pianist, photographer, and computer engineer. With a strong eye for detail and a passion for creativity, I create visually appealing websites while expressing myself through the beautiful melodies of the piano and capturing captivating moments behind the lens. Let's collaborate for an exceptional digital experience.</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/rishikesh.paudel.7/" target="_blank" ><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/rishikesh.paudel/" target="_blank" ><i class='bx bxl-instagram' ></i></a>
-                <a href="https://www.youtube.com/channel/UCj_i_AoBZmYS2DTcZVV7FpA" target="_blank" ><i class='bx bxl-youtube' ></i></a>
-                <a href="https://www.tiktok.com/@rishikesh.paudel" target="_blank" ><i class='bx bxl-tiktok' ></i></a>
-                <a href="https://www.linkedin.com/in/rishikesh-paudel/" target="_blank" ><i class='bx bxl-linkedin' ></i></a>
-            </div>
-            <a href="#" class="btn">Download CV</a>
-        </div>
+      <h2>Research interests</h2>
+      <p class="question">How should an autonomous robot represent uncertainty in its perception, recognize when that uncertainty threatens its localization, and act to recover it?</p>
+      <p class="small">Robots that work well on average can still fail when the world stops matching what they expect, as when NASA's Ingenuity helicopter lost reliable tracking over featureless Martian sand in 2024. Directions I want to study:</p>
+      <ul class="interests">
+        <li><b>Robot learning that transfers</b> across changes in dynamics, sensing and timing.</li>
+        <li><b>Perception and state estimation</b> that carry honest uncertainty and know when not to trust an observation.</li>
+        <li><b>Decisions under uncertainty</b> that weigh mission progress against localization quality.</li>
+        <li><b>Efficient AI for onboard hardware</b>, including embedded processors and FPGAs.</li>
+      </ul>
 
-        <div class="home-img">
-            <img src="images/rishikesh-paudel-home-image.jpg" alt="Home Image">
-        </div>
-    </section>
+    </div>
+    <aside class="facts">
+      <h2>Awards</h2>
+      <ul>
+        <li>First Place, 9th National FPGA Competition, Nepal, 2026</li>
+        <li>First Place, 8th National FPGA Competition, Nepal, 2025, for brain tumor detection with a CNN on FPGA</li>
+        <li>Local Winner, Kathmandu, NASA Space Apps Challenge, 2024</li>
+        <li>Category Winner, Best Use of AI, Sagarmatha Hacks, 2023</li>
+        <li>Fusemachines AI Fellowship, 2025</li>
+      </ul>
 
-    <!-- About Section Design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/rishikesh-paudel-about-image.jpg" alt="about-img">
-        </div>
+      <h2>Teaching and service</h2>
+      <ul>
+        <li>Digital literacy instructor, LOCUS and Worldlink, 2025: AI basics, cybersecurity and networking for grades 8 to 12 in eight schools across Karnali and Kathmandu.</li>
+        <li>Software engineering instructor, LOCUS, IOE Pulchowk Campus, 2025.</li>
+        <li>Vice Chair, LOCUS Open Source Team, 2025 to 2026.</li>
+        <li>Secretary, IOE IT Club, 2024 to 2025.</li>
+        <li>Class representative for 48 students, 2022 to 2026.</li>
+      </ul>
 
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Frontend Developer!</h3>
-            <p>As a frontend developer, I combine my technical skills with a strong eye for design to create visually appealing and user-friendly websites. I am experienced in HTML, CSS, JavaScript, and various frontend frameworks. I strive to deliver seamless and engaging user experiences.</p>
-            <h3>Pianist!</h3>
-            <p>Music is my true passion. I have been playing the piano for over a decade, and it is my creative outlet. From classical masterpieces to modern compositions, I enjoy expressing emotions and storytelling through the beautiful melodies and harmonies of the piano.</p>
-            <h3>Photographer!</h3>
-            <p>Capturing moments and telling stories through photography is another form of artistic expression for me. I love exploring different perspectives, whether it's capturing stunning landscapes or creating meaningful portraits. My goal is to evoke emotions and create visually impactful images.</p>
-            <h3>Computer Engineer!</h3>
-            <p>With a background in computer engineering, I have a strong foundation in programming, algorithms, and problem-solving. This technical expertise allows me to approach frontend development with a holistic perspective, ensuring efficient and optimized code.</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
+    </aside>
+  </div>
+</section>
 
-    <!-- Services Section Design -->
-    <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="tab">
+  <h1>Experience</h1>
+  <div class="job">
+    <div class="row"><h3>AI/ML Engineer, MedForce AI</h3><span class="when">Remote, UK &middot; Aug 2026 to present</span></div>
+    <p>MedForce builds AI tools that help pharmaceutical companies simulate and test decisions before they make them. Across several client projects:</p>
+    <ul>
+      <li><b>Precision personas.</b> Built and evaluated AI personas of specialist doctors, grounded in real survey and interview data. I tested them as a measuring tool: they should disagree where real doctors disagree, change their answers when the evidence changes, and stay the same when only the wording changes.</li>
+      <li><b>Evaluation.</b> Designed scoring rubrics and blind AI-judge evaluations for market forecasting reports across several European countries, so errors were found before a client saw them.</li>
+      <li><b>Claim validation.</b> Traced why an automated system marked many report claims as confirmed: most were not forecasts at all (survey answers, one person's opinion, a rating of a message), and the "later" evidence was often the same data published again. Redesigned the checks, including one that stops evidence about a different medicine from settling a claim, and hand-checked results against their source pages.</li>
+      <li><b>Virtual advisory board.</b> Several AI doctor personas discuss a question with a moderator.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="row"><h3>Full Stack Developer, LightHouse InfoTech</h3><span class="when">Sep 2024 to present</span></div>
+    <p>I build a title research platform for one of the company's clients. Researchers enter deed records from US county records, and the platform works out the chain of title: who owned which mineral, royalty and surface interest over time.</p>
+    <ul>
+      <li><b>Chain-of-title engine.</b> Tracks how each interest passes through every deed, with separate chains for minerals, royalty and surface rights.</li>
+      <li><b>Data quality.</b> Double-blind entry, where two researchers record the same document independently and the platform compares them, plus activity tracking, quality scoring and AI reading of deed PDFs to prefill records.</li>
+      <li><b>Ordering and delivery.</b> Customers order research packages and download the results, while expert researchers assign, review, approve and deliver the work.</li>
+      <li><b>Tools.</b> Go (Echo, GORM), PostgreSQL, React (Vite, TanStack Query, React Flow), Tailwind CSS, htmx, Docker, AWS, OpenTofu, GitHub Actions, Vitest and Playwright.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="row"><h3>Chief Technology Officer, Wholyx LLC (FileCourt)</h3><span class="when">Mar 2026 to Jun 2026</span></div>
+    <p>I led development of FileCourt, a multi-tenant platform for electronic court filing used by US law firms, and managed seven engineers over the course of the project while staying hands-on.</p>
+    <ul>
+      <li><b>Platform.</b> Architected the system in TypeScript, Next.js, Node.js, Python and PostgreSQL, with integrations to court e-filing systems and payment processing, and live filing status.</li>
+      <li><b>AI document processing.</b> Built LLM-based reading and prefill of legal documents to cut manual data entry and filing errors.</li>
+      <li><b>Cloud and security.</b> Designed infrastructure on GCP and AWS and led the move to AWS for stronger access control. Set up CI/CD, containers, secrets management and monitoring, and resolved every High and Critical finding from a third-party penetration test.</li>
+      <li><b>Launch.</b> Took the platform from the first line of code to court certification.</li>
+    </ul>
+  </div>
+</section>
 
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt' ></i>
-                <h3>Web Development</h3>
-                <p>Unlock your online potential with our comprehensive web development services. We specialize in building responsive and user-friendly websites using the latest technologies such as HTML5, CSS3, JavaScript, and popular frameworks. From custom web applications to e-commerce solutions, we deliver robust and scalable websites tailored to your business needs. Let's create an impactful online presence together.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+<!-- ================= RESEARCH ================= -->
+<section id="research" class="tab">
+  <h1>Research</h1>
+  <div class="cards">
+    <a class="card" href="#r-atlas">
+      <img src="assets/fig/atlas-accelerator.png" alt="" loading="lazy">
+      <span class="card-body">
+        <span class="card-kicker">Bachelor's thesis &middot; CERN ATLAS collaboration &middot; 2025 to 2026</span>
+        <span class="card-title">Graph neural networks for real-time particle tracking on FPGA</span>
+        <span class="card-text">Model study and a hand-written Verilog accelerator: 8.42 times fewer cycles at 8-bit fixed point. One technical report and two manuscripts.</span>
+      </span>
+    </a>
+    <a class="card" href="#r-nav">
+      <img src="assets/fig/nav-gazebo-sac-dr.jpg" alt="" loading="lazy">
+      <span class="card-body">
+        <span class="card-kicker">Robot learning &middot; 2026</span>
+        <span class="card-title">Robust robot navigation across simulators</span>
+        <span class="card-text">A policy fell from 98.5% to 5% success when moved to Gazebo. Domain randomization brought it back to 90%.</span>
+      </span>
+    </a>
+  </div>
 
-            <div class="services-box">
-                <i class='bx bx-palette' ></i>
-                <h3>Graphics Design</h3>
-                <p>We provide a range of professional graphic design services tailored to your needs. Our offerings include logo design, branding, print design, and digital graphics. With a keen eye for aesthetics and attention to detail, we create visually captivating designs that effectively communicate your brand's message. Elevate your visual identity with our expert graphic design services.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+  <article id="r-atlas" class="detail">
+    <p class="back"><a href="#research">All research</a></p>
+    <p class="eyebrow">Bachelor's thesis &middot; CERN ATLAS collaboration &middot; May 2025 to Jul 2026</p>
+    <h2>Graph neural networks for real-time particle tracking on FPGA</h2>
+    <p class="meta">PyTorch Lightning, PyTorch Geometric, Verilog, Vivado, AMD Alveo U250 &middot; <a href="https://cds.cern.ch/record/2966162">Technical report</a> &middot; <a href="https://github.com/Rishikesh0523/GNN-FPGA-Particle-Path-Tracking">Code</a> &middot; <a href="#publications">Publications</a></p>
+    <p class="small">Supervision and collaboration: Dr. Basanta Joshi (IOE Pulchowk), Dr. Santosh Parajuli (University of Illinois Urbana-Champaign) and Dr. Suyog Shrestha (Washington College).</p>
 
-            <div class="services-box">
-                <i class='bx bx-bar-chart-alt' ></i>
-                <h3>Digital Marketing</h3>
-                <p>Supercharge your digital presence with our results-driven digital marketing services. We offer comprehensive strategies including search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, and content marketing. Our team of experts crafts targeted campaigns to boost brand visibility, drive traffic, and generate leads. Maximize your online success with our tailored digital marketing solutions.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-    </section>
+    <h3>The problem</h3>
+    <p>Every collision at the Large Hadron Collider sends charged particles through the detector, leaving thousands of hits. Reconstructing their paths is one of the most demanding computing tasks at the LHC, and after the High-Luminosity upgrade the ATLAS Event Filter must handle about a million events per second. A graph neural network can do this by treating hits as nodes and candidate links between hits as edges, then deciding which edges are real. The question is whether such a network can be both accurate enough and fast enough on FPGA hardware.</p>
 
-    <!-- Portfolio Section Design -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
+    <h3>1. Choosing the model</h3>
+    <p>I trained and compared two graph networks that differ only in how a hit combines messages from its neighbours: an Interaction Network, which adds them up, and an edge-conditioned graph attention network, which learns a weighted average. In my thesis setup, attention reached higher recall (0.989 against 0.903) and the Interaction Network higher precision (0.971 against 0.899).</p>
+    <p>A common assumption is that attention should help. To test it properly, I ran a controlled study on TrackML simulation under a fixed protocol with a dated record of changes: five seeds, validation-only model selection, and two held-out test sets, with uncertainty from resampling whole events. Summation won on every seed and both test sets, made fewer than a third as many edge errors (421 against 1,444 of 375,406 test edges), stayed ahead at 1, 4 and 8 rounds of message passing, and was slightly better calibrated. It was also about 1.75 times faster in GPU timing.</p>
+    <div class="pair">
+      <figure><img src="assets/fig/gnn-depth.png" alt="Validation error against message-passing depth for the sum and attention models" loading="lazy" width="1000" height="692"><figcaption>Validation error (1 minus average precision, log scale) against message-passing depth. Lower is better. Points are five-seed means.</figcaption></figure>
+      <figure><img src="assets/fig/gnn-calibration.png" alt="Reliability diagram and score histogram for both models" loading="lazy" width="1000" height="1167"><figcaption>Calibration: the fraction of edges that are truly real in each score bin, and how many edges fall in each bin.</figcaption></figure>
+    </div>
+    <p>These results, together with hardware cost, decided the design: attention's softmax is expensive in fixed-point arithmetic, while summation maps simply onto hardware. I built the Interaction Network.</p>
 
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="https://images.unsplash.com/photo-1620741211956-32977c8973be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" height="300" alt="portfolio-box-1">
-                <div class="portfolio-layer">
-                    <h4>Carrom Board Game</h4>
-                    <p>Using C++ and SDL library</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
+    <h3>2. Designing the accelerator</h3>
+    <p>I wrote the accelerator by hand in Verilog, rather than generating it with a high-level synthesis tool, so I could control every cycle. It runs at 8-bit fixed point on an AMD Alveo U250. Encoders turn raw hit and edge features into 32-wide embeddings, eight message-passing blocks update them, and a decoder scores each edge.</p>
+    <figure><img src="assets/fig/atlas-accelerator.png" alt="Block diagram of the optimized accelerator" loading="lazy" width="1400" height="1036"><figcaption>Block diagram of the optimized accelerator: encoders, message passing with ping-pong buffers and three parallel first-layer units, and the edge decoder.</figcaption></figure>
+    <div class="pair">
+      <figure><img src="assets/fig/atlas-hierarchy.png" alt="Verilog module hierarchy of the top module" loading="lazy" width="1000" height="606"><figcaption>Verilog instance tree. One MLP layer unit is reused by the encoders, message passing and decoder.</figcaption></figure>
+      <figure><img src="assets/fig/atlas-ping-pong.png" alt="Ping-pong buffer schedule across message-passing iterations" loading="lazy" width="1000" height="789"><figcaption>Ping-pong buffering: each iteration reads one buffer and writes the other, so reads and writes never collide.</figcaption></figure>
+    </div>
 
-            <div class="portfolio-box">
-                <img src="https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80" height="300" alt="portfolio-box-2">
-                <div class="portfolio-layer">
-                    <h4>Stock Tracker</h4>
-                    <p>Using C and curl library</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
+    <h3>3. Making it fast</h3>
+    <p>Starting from a simple sequential design, I applied seven architectural changes one at a time and measured each: overlapping memory access with computation, pipelining the edge and node networks, three parallel first-layer units, four-way multiply-accumulate, and a cheaper normalization. On a small reference graph the cycle count fell from 32,000 to 3,800, an 8.42 times reduction. The memory changes gave about 60% of the saving.</p>
+    <figure><img src="assets/fig/atlas-cycle-count.jpg" alt="Bar chart of cycle count after each optimization stage, from 32,000 to 3,800" loading="lazy" width="1100" height="623"><figcaption>Cycle count after each main optimization stage, on a reference graph of 5 edges and 4 nodes.</figcaption></figure>
+    <figure><img src="assets/fig/atlas-edge-pipeline.png" alt="Timing diagram of the edge network before and after pipelining" loading="lazy" width="1200" height="688"><figcaption>Edge network timing before (top) and after (bottom) decoupling loads and running three first-layer units round-robin.</figcaption></figure>
 
-            <div class="portfolio-box">
-                <img src="https://images.unsplash.com/photo-1455894127589-22f75500213a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1087&q=80" height="300" alt="portfolio-box-3">
-                <div class="portfolio-layer">
-                    <h4>Portfolio Website</h4>
-                    <p>Using HTML, CSS and JavaScript</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
+    <h3>4. Checking that it is correct and how it scales</h3>
+    <p>I exported reference values from the PyTorch model at six internal points, from the encoder outputs to the final edge scores, and compared the RTL signals against them in five testbenches. Latency grows roughly in a straight line with graph size: a graph of 500 nodes and 1,000 edges takes about 1.7 ms at the nominal 250 MHz clock.</p>
+    <div class="pair">
+      <figure><img src="assets/fig/atlas-latency.png" alt="Latency against number of nodes, rising linearly" loading="lazy" width="900" height="511"><figcaption>Simulated latency against graph size at 250 MHz.</figcaption></figure>
+      <figure><img src="assets/fig/atlas-waveform.png" alt="Simulation waveform of the message passing block" loading="lazy" width="1200" height="601"><figcaption>Testbench waveform of the message-passing block.</figcaption></figure>
+    </div>
 
-            <div class="portfolio-box">
-                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height="300" alt="portfolio-box-4">
-                <div class="portfolio-layer">
-                    <h4>YouTube</h4>
-                    <p>Follow me on YouTube! 😉</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
+    <h3>Limitations and open problems</h3>
+    <p class="limits">The 8.42 times figure is a reduction in clock cycles in simulation, not a measured wall-clock speed-up on the card. A build with smaller graph memories places and routes, but misses its 4 ns timing target by 0.775 ns, mostly because of routing delay. Latency for a 500-node graph is still 17 to 20 times above a 100 microsecond goal. Closing that gap is the next step, and both manuscripts report it openly.</p>
+  </article>
 
-            <div class="portfolio-box">
-                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height="300" alt="portfolio-box-5">
-                <div class="portfolio-layer">
-                    <h4>TikTok</h4>
-                    <p>Follow me on Tiktok! 😉</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
+  <article id="r-nav" class="detail">
+    <p class="back"><a href="#research">All research</a></p>
+    <p class="eyebrow">Robot learning &middot; 2026</p>
+    <h2>Robust robot navigation across simulators</h2>
+    <p class="meta">Reinforcement learning, SAC, PPO, Stable-Baselines3, ROS 2, Gazebo Harmonic &middot; <a href="https://github.com/Rishikesh0523/DRL_Robotics_SAC_PPO">Code</a></p>
+    <p><b>Question.</b> How well does a navigation policy hold up when the dynamics, sensors and timing of the test environment differ from those it was trained in?</p>
+    <p><b>What I did.</b> I trained a mecanum robot to reach goals and avoid obstacles using only a 360-ray LiDAR, with no map. Before trusting any results, I traced early training failures to three faults in the simulator itself, including stale observations after resets: the agent had been acting confidently on wrong information. I then wrote a lightweight 2D trainer that reproduces the Gazebo arena, LiDAR and control interface, raising training speed from about 3 to 4,700 steps per second.</p>
+    <p><b>The transfer failure.</b> A policy that succeeded 98.5% of the time in the 2D trainer succeeded only 5% of the time in Gazebo. Randomizing motion, sensor, actuator and control-timing parameters during training raised Gazebo success to 90%, without changing the network or the reward.</p>
+    <p><b>Results.</b> On a fixed evaluation set of 20 random start and goal pairs in Gazebo, SAC with domain randomization succeeded 90% of the time (mean time to goal 5.3 s), PPO 65%, and a proportional controller 40%.</p>
+    <div class="pair">
+      <figure><img src="assets/fig/nav-gazebo-ppo-nominal.jpg" alt="Gazebo trajectories of a PPO policy trained without randomization, with many loops and timeouts" loading="lazy" width="640" height="640"><figcaption>PPO trained without randomization: many circling timeouts and collisions.</figcaption></figure>
+      <figure><img src="assets/fig/nav-gazebo-sac-dr.jpg" alt="Gazebo trajectories of a SAC policy trained with domain randomization, mostly reaching goals" loading="lazy" width="640" height="640"><figcaption>SAC trained with domain randomization: most episodes reach the goal.</figcaption></figure>
+    </div>
+    <p class="caption">Twenty Gazebo episodes each. Stars are goals, grey circles are obstacles. Green ends in success, red in collision, orange in timeout.</p>
+    <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/wE2R6vJm7eU?autoplay=1&rel=0" srcdoc="&lt;meta name=&#x27;referrer&#x27; content=&#x27;strict-origin-when-cross-origin&#x27;&gt;&lt;style&gt;*{margin:0;padding:0}html,body{height:100%;overflow:hidden;background:#000}a{display:block;height:100%;position:relative}img{width:100%;height:100%;object-fit:cover;opacity:.92}a:hover img{opacity:1}span{position:absolute;left:50%;top:50%;width:68px;height:48px;margin:-24px 0 0 -34px;border-radius:12px;background:rgba(20,32,46,.85)}span:after{content:&#x27;&#x27;;position:absolute;left:28px;top:14px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube-nocookie.com/embed/wE2R6vJm7eU?autoplay=1&amp;rel=0&#x27; aria-label=&#x27;Play: SAC and PPO for mapless robot navigation&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/wE2R6vJm7eU/hqdefault.jpg&#x27; alt=&#x27;&#x27;&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;" title="SAC and PPO for mapless robot navigation" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+    <p class="limits"><b>Limitations.</b> All tests are in simulation, in one 4 by 4 m arena with fixed obstacles, over 20 start and goal pairs. The next step is testing on a physical robot and in more varied layouts.</p>
+  </article>
+</section>
 
-            <div class="portfolio-box">
-                <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height="300" alt="portfolio-box-6">
-                <div class="portfolio-layer">
-                    <h4>Instagram</h4>
-                    <p>Follow me on Instagram! 😉</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-    </section>
+<!-- ================= PUBLICATIONS ================= -->
+<section id="publications" class="tab">
+  <h1>Publications</h1>
+  <p class="muted">All three come from my <a href="#r-atlas">ATLAS and FPGA thesis work</a>.</p>
+  <h3 class="sub">Technical report</h3>
+  <div class="pub">
+    <div class="title">Online Track Reconstruction Using GNN on FPGA for the ATLAS Experiment</div>
+    <div class="authors"><b>R. Paudel</b>, Y. Shrestha, P. R. Pokhrel</div>
+    <div class="meta">CERN-OPEN-2026-007, CERN, July 2026 &middot; <a href="https://cds.cern.ch/record/2966162">Report</a> &middot; <a href="https://github.com/Rishikesh0523/GNN-FPGA-Particle-Path-Tracking">Code</a></div>
+  </div>
+  <h3 class="sub">Manuscripts in preparation</h3>
+  <div class="pub">
+    <div class="title">RTL Design and Latency Optimisation of an Interaction Network Accelerator on FPGA for Real-Time Particle Track Reconstruction</div>
+    <div class="authors"><b>R. Paudel</b>, Y. Shrestha, P. R. Pokhrel, S. Parajuli, B. Joshi, S. Shrestha</div>
+    <div class="meta">In preparation, 2026 &middot; <a href="#r-atlas">Project page</a></div>
+    <p class="small">A hand-written Verilog Interaction Network accelerator for the AMD Alveo U250. Seven architectural changes reduced the cycle count on a reference graph from 32,000 to 3,800, an 8.42 times reduction, and memory-access changes gave about 60% of the saving.</p>
+  </div>
+  <div class="pub">
+    <div class="title">Sum Aggregation versus Scalar Edge-Conditioned Attention for TrackML Edge Classification</div>
+    <div class="authors"><b>R. Paudel</b>, Y. Shrestha, P. R. Pokhrel, S. Parajuli, B. Joshi, S. Shrestha</div>
+    <div class="meta">In preparation, 2026 &middot; <a href="#r-atlas">Project page</a></div>
+    <p class="small">A controlled comparison on TrackML simulation under a fixed protocol with a dated record of changes, using five seeds and two held-out test sets of 50 events. Sum aggregation made fewer edge errors (421 against 1,444 of 375,406 test edges) and ran about 1.75 times faster in GPU timing on the validation graphs.</p>
+  </div>
+</section>
 
-    <!-- Contact Section Design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="tab">
+  <h1>Projects</h1>
+  <div class="cards">
+    <a class="card" href="#p-drone">
+      <img src="assets/fig/rooftop-segmentation.jpg" alt="" loading="lazy">
+      <span class="card-body">
+        <span class="card-kicker">Aerial robotics &middot; 2025</span>
+        <span class="card-title">Drone mapping of rooftops for urban farming</span>
+        <span class="card-text">A drone built from parts, U-Net rooftop segmentation, and area estimates within 2 to 6%.</span>
+      </span>
+    </a>
+    <a class="card" href="#p-imu">
+      <img src="assets/fig/imu-viewer.jpg" alt="" loading="lazy">
+      <span class="card-body">
+        <span class="card-kicker">Sensor fusion &middot; 2026</span>
+        <span class="card-title">Wearable motion tracking with IMU sensor fusion</span>
+        <span class="card-text">Elbow angle from a smartwatch and a phone, with Madgwick fusion and clock synchronization.</span>
+      </span>
+    </a>
+    <a class="card" href="#p-cuda">
+      <img src="assets/fig/cuda-kmeans-speedup.jpg" alt="" loading="lazy">
+      <span class="card-body">
+        <span class="card-kicker">Efficient computing &middot; 2026</span>
+        <span class="card-title">Neural network inference from scratch on GPU</span>
+        <span class="card-text">Hand-written CUDA kernels, checked against PyTorch, with no cuBLAS or cuDNN.</span>
+      </span>
+    </a>
+    <a class="card" href="#p-crop">
+      <span class="card-figure">34 classes &middot; 9 crops &middot; offline on a phone</span>
+      <span class="card-body">
+        <span class="card-kicker">Edge AI &middot; 2025</span>
+        <span class="card-title">Crop disease detection that works offline</span>
+        <span class="card-text">Three models compared, with a quantized model that runs without a connection.</span>
+      </span>
+    </a>
+  </div>
 
-        <form action="#" method="POST" name="product" id="product">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name" name="Name" required>
-                <input type="email" placeholder="Email Address" name="Email" required>
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number" name="Mobile" required>
-                <input type="text" placeholder="Email Subject" name="Subject" required>
-            </div>
-            <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <button type="submit" value="Send Message" class="btn">
-                Send Message
-            </button>
-            <!-- <input type="submit" value="Send Message" class="btn"> -->
-        </form>
-    </section>
+  <article id="p-drone" class="detail">
+    <p class="back"><a href="#projects">All projects</a></p>
+    <p class="eyebrow">Aerial robotics &middot; 2025</p>
+    <h2>Drone mapping of rooftops for urban farming</h2>
+    <p class="meta">APM 2.8, GPS, U-Net, OpenCV, GIS &middot; <a href="https://github.com/Rishikesh0523/rooftop-detection">Segmentation code</a> &middot; <a href="https://github.com/Rishikesh0523/drone-images-surface-area-calculator">Area code</a></p>
+    <p>I built a drone from parts, flew it to capture rooftop images, and trained a U-Net to segment rooftops (93.5% pixel accuracy on a 25-image labelled validation set). Using a sheet of A4 paper as the scale reference, area estimates were within 1.96% for rectangular roofs, 3.90% for triangular and 6.17% for circular. Masks were exported as georeferenced GIS objects.</p>
+    <figure><img src="assets/fig/rooftop-segmentation.jpg" alt="Aerial images, predicted rooftop masks, cleaned masks and overlays" loading="lazy" width="1000" height="500"><figcaption>Left to right: aerial image, U-Net prediction, cleaned mask, and overlay.</figcaption></figure>
+    <div class="videos">
+      <figure><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/bSZyMV-FP6I?autoplay=1&rel=0" srcdoc="&lt;meta name=&#x27;referrer&#x27; content=&#x27;strict-origin-when-cross-origin&#x27;&gt;&lt;style&gt;*{margin:0;padding:0}html,body{height:100%;overflow:hidden;background:#000}a{display:block;height:100%;position:relative}img{width:100%;height:100%;object-fit:cover;opacity:.92}a:hover img{opacity:1}span{position:absolute;left:50%;top:50%;width:68px;height:48px;margin:-24px 0 0 -34px;border-radius:12px;background:rgba(20,32,46,.85)}span:after{content:&#x27;&#x27;;position:absolute;left:28px;top:14px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube-nocookie.com/embed/bSZyMV-FP6I?autoplay=1&amp;rel=0&#x27; aria-label=&#x27;Play: Drone flight&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/bSZyMV-FP6I/hqdefault.jpg&#x27; alt=&#x27;&#x27;&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;" title="Drone flight" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div><figcaption>Test flight of the drone</figcaption></figure>
+      <figure><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/rehqdYOfJJc?autoplay=1&rel=0" srcdoc="&lt;meta name=&#x27;referrer&#x27; content=&#x27;strict-origin-when-cross-origin&#x27;&gt;&lt;style&gt;*{margin:0;padding:0}html,body{height:100%;overflow:hidden;background:#000}a{display:block;height:100%;position:relative}img{width:100%;height:100%;object-fit:cover;opacity:.92}a:hover img{opacity:1}span{position:absolute;left:50%;top:50%;width:68px;height:48px;margin:-24px 0 0 -34px;border-radius:12px;background:rgba(20,32,46,.85)}span:after{content:&#x27;&#x27;;position:absolute;left:28px;top:14px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube-nocookie.com/embed/rehqdYOfJJc?autoplay=1&amp;rel=0&#x27; aria-label=&#x27;Play: Calculating rooftop area from drone images&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/rehqdYOfJJc/hqdefault.jpg&#x27; alt=&#x27;&#x27;&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;" title="Calculating rooftop area from drone images" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div><figcaption>Measuring rooftop area from drone images</figcaption></figure>
+    </div>
+  </article>
 
-    <!-- Footer Design -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by Rishikesh | All Rights Reserved.</p>
-        </div>
+  <article id="p-imu" class="detail">
+    <p class="back"><a href="#projects">All projects</a></p>
+    <p class="eyebrow">Sensor fusion &middot; 2026</p>
+    <h2>Wearable motion tracking with IMU sensor fusion</h2>
+    <p class="meta">Python, Kotlin, Bluetooth LE, Madgwick filter, three.js &middot; <a href="https://github.com/Rishikesh0523/imu-motion-tracker">Code</a></p>
+    <p>Real-time elbow angle tracking from a smartwatch and a phone. The system streams accelerometer and gyroscope data over Bluetooth, estimates orientation with a Madgwick filter, maps both device clocks onto one timeline, calibrates each sensor to the arm from gravity and free movement, and shows a live 3D view.</p>
+    <p class="limits"><b>Limitations.</b> The 0.66 degree RMSE is measured on simulated data with realistic sensor errors, not against an independent motion-capture reference.</p>
+    <div class="pair">
+      <figure><img src="assets/fig/imu-validation.jpg" alt="Simulated validation: estimated elbow angle against reference, error trace and Bland-Altman plot" loading="lazy" width="1000" height="636"><figcaption>Simulated validation against a known reference.</figcaption></figure>
+      <figure><img src="assets/fig/imu-viewer.jpg" alt="Browser viewer showing a 3D arm and the live elbow angle" loading="lazy" width="900" height="534"><figcaption>Live browser viewer.</figcaption></figure>
+    </div>
+    <figure><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/uuypbZ94wFw?autoplay=1&rel=0" srcdoc="&lt;meta name=&#x27;referrer&#x27; content=&#x27;strict-origin-when-cross-origin&#x27;&gt;&lt;style&gt;*{margin:0;padding:0}html,body{height:100%;overflow:hidden;background:#000}a{display:block;height:100%;position:relative}img{width:100%;height:100%;object-fit:cover;opacity:.92}a:hover img{opacity:1}span{position:absolute;left:50%;top:50%;width:68px;height:48px;margin:-24px 0 0 -34px;border-radius:12px;background:rgba(20,32,46,.85)}span:after{content:&#x27;&#x27;;position:absolute;left:28px;top:14px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube-nocookie.com/embed/uuypbZ94wFw?autoplay=1&amp;rel=0&#x27; aria-label=&#x27;Play: Madgwick filter explained&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/uuypbZ94wFw/hqdefault.jpg&#x27; alt=&#x27;&#x27;&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;" title="Madgwick filter explained" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div><figcaption>My explainer on the Madgwick filter used in this project</figcaption></figure>
+  </article>
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
-        </div>
-    </footer>
+  <article id="p-cuda" class="detail">
+    <p class="back"><a href="#projects">All projects</a></p>
+    <p class="eyebrow">Efficient computing &middot; 2026</p>
+    <h2>Neural network inference from scratch on GPU</h2>
+    <p class="meta">C++, CUDA &middot; <a href="https://github.com/Rishikesh0523/cuda-mlp-inference">MLP inference</a> &middot; <a href="https://github.com/Rishikesh0523/gpu-kmeans-cuda">K-means</a></p>
+    <p>An inference engine with hand-written CUDA kernels (naive, tiled, then fused), checked element by element against PyTorch and benchmarked without cuBLAS or cuDNN. A companion project implements K-means five ways, from single-threaded C++ to optimized CUDA, to separate the gain from parallel hardware from the gain from each optimization.</p>
+    <figure><img src="assets/fig/cuda-mlp-benchmark.jpg" alt="Latency and throughput of CPU, CUDA and PyTorch implementations against batch size" loading="lazy" width="1300" height="500"><figcaption>MLP inference on a Tesla T4: latency and throughput against batch size for each implementation.</figcaption></figure>
+    <figure><img src="assets/fig/cuda-kmeans-speedup.jpg" alt="Speed-up of each K-means implementation over a single CPU core" loading="lazy" width="900" height="597"><figcaption>K-means speed-up over one CPU core as the dataset grows.</figcaption></figure>
+  </article>
 
-    <!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <article id="p-crop" class="detail">
+    <p class="back"><a href="#projects">All projects</a></p>
+    <p class="eyebrow">Edge AI &middot; 2025</p>
+    <h2>Crop disease detection that works offline</h2>
+    <p class="meta">ResNet-50, EfficientNet-B0, Vision Transformer, TensorFlow &middot; <a href="https://github.com/Rishikesh0523/plant-disease-detection">Code</a></p>
+    <p>Compared three models on an augmented dataset of 34 disease classes across 9 crops (120,000 training and 30,000 validation images): ResNet-50 reached 99.85% validation accuracy, EfficientNet-B0 99.58% and a fine-tuned Vision Transformer 98.34%. The quantized model runs fully offline on a phone, because many smallholder farmers in Nepal have no reliable connection in the field.</p>
+    <p class="limits"><b>Limitations.</b> These are validation scores on an augmented dataset, not results from field photos taken by farmers.</p>
+  </article>
+</section>
 
-    <!-- Typed Js -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- ================= OTHERS ================= -->
+<section id="others" class="tab">
+  <h1>Others</h1>
+  <h2>Explainer videos</h2>
+  <p>Short videos where I work through the math behind methods I use.</p>
+  <div class="videos">
+    <figure><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/uuypbZ94wFw?autoplay=1&rel=0" srcdoc="&lt;meta name=&#x27;referrer&#x27; content=&#x27;strict-origin-when-cross-origin&#x27;&gt;&lt;style&gt;*{margin:0;padding:0}html,body{height:100%;overflow:hidden;background:#000}a{display:block;height:100%;position:relative}img{width:100%;height:100%;object-fit:cover;opacity:.92}a:hover img{opacity:1}span{position:absolute;left:50%;top:50%;width:68px;height:48px;margin:-24px 0 0 -34px;border-radius:12px;background:rgba(20,32,46,.85)}span:after{content:&#x27;&#x27;;position:absolute;left:28px;top:14px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube-nocookie.com/embed/uuypbZ94wFw?autoplay=1&amp;rel=0&#x27; aria-label=&#x27;Play: Madgwick filter explained&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/uuypbZ94wFw/hqdefault.jpg&#x27; alt=&#x27;&#x27;&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;" title="Madgwick filter explained" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div><figcaption>The Madgwick filter: how a phone knows which way it is facing</figcaption></figure>
+    <figure><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/c1Y4eVC6XkE?autoplay=1&rel=0" srcdoc="&lt;meta name=&#x27;referrer&#x27; content=&#x27;strict-origin-when-cross-origin&#x27;&gt;&lt;style&gt;*{margin:0;padding:0}html,body{height:100%;overflow:hidden;background:#000}a{display:block;height:100%;position:relative}img{width:100%;height:100%;object-fit:cover;opacity:.92}a:hover img{opacity:1}span{position:absolute;left:50%;top:50%;width:68px;height:48px;margin:-24px 0 0 -34px;border-radius:12px;background:rgba(20,32,46,.85)}span:after{content:&#x27;&#x27;;position:absolute;left:28px;top:14px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube-nocookie.com/embed/c1Y4eVC6XkE?autoplay=1&amp;rel=0&#x27; aria-label=&#x27;Play: Hamilton-Jacobi reachability explained&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/c1Y4eVC6XkE/hqdefault.jpg&#x27; alt=&#x27;&#x27;&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;" title="Hamilton-Jacobi reachability explained" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div><figcaption>Hamilton-Jacobi reachability in 60 seconds: provable safety for robots</figcaption></figure>
+  </div>
+  <h2>Music and photography</h2>
+  <p>I have played piano for more than ten years and share performances on <a href="https://www.youtube.com/@eyesome-official">YouTube</a>. I also do event photography, and was lead photographer for LOCUS at IOE Pulchowk Campus from 2023 to 2025.</p>
+</section>
 
-    <!-- custom js -->
-    <script src="js/script.js"></script>
+</main>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyhxjlgkrFhkceKfRzMX3Ktbm-C2dykyM-uqOA9-w9DiDokv_yXPsP-97tGdbcb334n/exec'
-        const form = document.forms['product']
-
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thank You! I Got Your Message Successfully." ))
-            .then(() => {  window.location.reload(); })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-
+<footer>
+  <a href="mailto:rishikesh0523@gmail.com">rishikesh0523@gmail.com</a> &middot; <a href="assets/Rishikesh_Paudel_CV.pdf">CV</a> &middot; <a href="https://www.linkedin.com/in/rishikesh-paudel/">LinkedIn</a> &middot; <a href="https://github.com/Rishikesh0523">GitHub</a>
+</footer>
 </body>
+</html>
